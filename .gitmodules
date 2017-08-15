@@ -1,3 +1,4 @@
 [submodule "themes/meteor"]
 	path = themes/meteor
-	url = https://github.com/meteor/hexo-theme-meteor.git
+	url = https://github.com/GraphQL-China/hexo-theme-meteor.git
+	branch = apollo-cn
