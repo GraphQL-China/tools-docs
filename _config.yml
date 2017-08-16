@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Apollo Tools Guide
-subtitle: A guide to using the Apollo GraphQL Tools.
+title: Apollo 服务端指南
+subtitle: 一份使用 Apollo GraphQL Tools 的指南。
 description:
 author:
 language:
@@ -38,7 +38,7 @@ sidebar_categories:
     - graphql-subscriptions/express
     - graphql-subscriptions/external-pubsub
     - graphql-subscriptions/meteor
-github_repo: apollostack/tools-docs
+github_repo: GraphQL-China/tools-docs
 content_root: tools
 
 social_links:
