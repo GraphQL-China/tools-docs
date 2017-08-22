@@ -27,7 +27,7 @@ order: 0
 
 ## GraphQL 客户端工具
 
-- [graphql-anywhere](https://github.com/apollostack/graphql-anywhere)，Apollo JavaScript Client 的核心无模式 GraphQL 执行引擎，可让你构建自己强大的GraphQL 工具和缓存实现，并且能够在任何可以运行 JavaScript 代码的地方工作。
+- [graphql-anywhere](https://github.com/apollostack/graphql-anywhere)，Apollo JavaScript Client 的 schema-less GraphQL 核心执行引擎，可让你构建自己强大的GraphQL 工具和缓存实现，并且能够在任何可以运行 JavaScript 代码的地方工作。
 - [graphql-tag](https://github.com/apollostack/graphql-tag)，一个简单的用于解析和打印 GraphQL 查询的库，并能够将多个片段合并到一个查询中。它有助于增强 [apollo-client](https://github.com/apollostack/apollo-client)，且能够与 [eslint-plugin-graphql](https://github.com/apollostack/eslint-plugin-graphql) 完美结合。
 
 ## 开发者工具
