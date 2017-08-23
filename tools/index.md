@@ -1,36 +1,35 @@
 ---
-title: Overview
+title: 综述
 order: 0
 ---
 
-In addition to a set of fully-featured GraphQL clients, the Apollo community maintains a set of tools for building GraphQL servers, and some utilities that make it easier to work with GraphQL in general.
+除了一整套功能齐全的 GraphQL 客户端之外，Apollo 社区还维护了一套用于构建 GraphQL 服务器的工具，以及一些让使用 GraphQL 变得更加方便的实用程序。
 
-If you're looking for a simple way to get a GraphQL.js server up and running, start with [graphql-tools](/tools/graphql-tools/).
+如果你正在寻找一种简单的方法来启动并运行一台 GraphQL.js 服务器，请从 [graphql-tools](/tools/graphql-tools/) 开始吧。
 
 ## Apollo Server & tools
 
-These are libraries designed to make it easy to build a JavaScript GraphQL server using [GraphQL.js](https://github.com/graphql/graphql-js), Facebook's reference implementation of a GraphQL type system and execution engine.
+这里是一些设计用于使构建 JavaScript GraphQL 服务器变得更加简单的库，基于 [GraphQL.js](https://github.com/graphql/graphql-js) 和 Facebook 的 GraphQL 类型系统和执行引擎的参考实现。
 
-- [graphql-tools](/tools/graphql-tools), a package that enables you to build a production-ready GraphQL.js schema using the GraphQL schema language, rather than using the GraphQL.js type constructors directly. Schemas built with this package are compatible with any GraphQL servers, including our own `apollo-server` and Facebook's `express-graphql`. This allows you to build on the [getting started guide for GraphQL.js](http://graphql.org/graphql-js/) with additional support for resolvers, unions, interfaces, custom scalars, modularizing your schema, and more.
-- [apollo-server](/tools/apollo-server), a production-ready Node.js GraphQL server library that supports **Express**, **Connect**, **Hapi**, **Koa**, and other popular Node HTTP servers, with built-in features like persisted queries, batching, and more. Apollo Server works with any GraphQL client, like Apollo, Relay, Lokka, and more.
+- [graphql-tools](/tools/graphql-tools)，使你能够使用 GraphQL schema language 构建生产可用的 GraphQL.js schema，而不是直接使用 GraphQL.js 类型构造函数。使用这个包构建的 schema 可以与任何 GraphQL 服务器兼容，包括我们自己的 `apollo-server` 和 Facebook 的 `express-graphql`。这允许你基于 [GraphQL.js 入门指南](http://graphql.cn/graphql-js/) 进行构建，并为解析器、联合、接口、自定义标量、schema 模块化等提供额外的支持。
+- [apollo-server](/tools/apollo-server)，一个生产可用的 Node.js GraphQL 服务端库，支持 **Express**、**Connect**、**Hapi**、**Koa** 以及其它流行的 Node HTTP 服务器，包含持久化查询、批处理等内置功能。Apollo Server 可以与任何 GraphQL 客户端（如 Apollo、Relay、Lokka 等）协同工作。
 
-[Launchpad](https://launchpad.graphql.com/new) is an in-browser GraphQL server playground. It's like a server-side JSFiddle, and it uses the above libraries. For more info, see [the announcement](https://dev-blog.apollodata.com/introducing-launchpad-the-graphql-server-demo-platform-cc4e7481fcba) and [the docs](https://github.com/apollographql/launchpad/blob/master/docs.md).
+[Launchpad](https://launchpad.graphql.com/new) 是一款能够在浏览器中使用的 GraphQL 服务端演示环境。它使用了上面提到的库，你可以把它当成一个服务端的 JSFiddle。想获取更多信息，请参阅 [公告](https://dev-blog.apollodata.com/introducing-launchpad-the-graphql-server-demo-platform-cc4e7481fcba) 和 [文档](https://github.com/apollographql/launchpad/blob/master/docs.md)。
 
-## GraphQL subscriptions
+## GraphQL 订阅
 
-The Apollo community is excited about enabling people to add realtime functionality to their applications, and GraphQL subscriptions are the first step on that path. You can use the packages below to add subscription support to any Node.js GraphQL server.
+使人们能够为应用程序添加实时功能是 Apollo 社区感到兴奋的一件事，而 GraphQL 订阅是在这条路上的第一步。你可以使用以下的包为任何 Node.js GraphQL 服务器添加订阅支持。
 
-- [graphql-subscriptions](https://github.com/apollostack/graphql-subscriptions), a transport-agnostic JavaScript utilities collection, including `PubSub`, channels mapping and filters.
-- [subscriptions-transport-ws](https://github.com/apollostack/subscriptions-transport-ws), a WebSocket server and client for GraphQL that works with `AsyncIterable` and can be easily used directly in a JavaScript app or wired up to a fully-featured GraphQL client like Apollo or Relay.
+- [graphql-subscriptions](https://github.com/apollostack/graphql-subscriptions)，一个与传输无关的 JavaScript 实用程序集合，包括 `PubSub`、通道映射和过滤器。
+- [subscriptions-transport-ws](https://github.com/apollostack/subscriptions-transport-ws)，一个 GraphQL 的 WebSocket 服务端和客户端，可与 `AsyncIterable` 一起使用，且可以简单地直接在 JavaScript 应用程序中使用，或连接到功能齐全的 GraphQL 客户端，如 Apollo 或 Relay。
 
-You can read more about subscription server [here](/tools/graphql-subscriptions/).
+你可以在 [了解](/tools/graphql-subscriptions/) 阅读更多关于订阅服务器的内容。
 
-## GraphQL client tools
+## GraphQL 客户端工具
 
-- [graphql-anywhere](https://github.com/apollostack/graphql-anywhere), the core schema-less GraphQL execution engine of the Apollo JavaScript Client, which lets you build your own powerful GraphQL tools and cache implementations, and works anywhere you can run JavaScript code.
-- [graphql-tag](https://github.com/apollostack/graphql-tag), a simple library for parsing and printing GraphQL queries, as well as putting together multiple fragments into one query. It helps power [apollo-client](https://github.com/apollostack/apollo-client) and works great with [eslint-plugin-graphql](https://github.com/apollostack/eslint-plugin-graphql).
+- [graphql-anywhere](https://github.com/apollostack/graphql-anywhere)，Apollo JavaScript Client 的 schema-less GraphQL 核心执行引擎，可让你构建自己强大的GraphQL 工具和缓存实现，并且能够在任何可以运行 JavaScript 代码的地方工作。
+- [graphql-tag](https://github.com/apollostack/graphql-tag)，一个简单的用于解析和打印 GraphQL 查询的库，并能够将多个片段合并到一个查询中。它有助于增强 [apollo-client](https://github.com/apollostack/apollo-client)，且能够与 [eslint-plugin-graphql](https://github.com/apollostack/eslint-plugin-graphql) 完美结合。
 
-## Developer tools
+## 开发者工具
 
-- [eslint-plugin-graphql](https://github.com/apollostack/eslint-plugin-graphql), an ESLint plugin that will check your GraphQL query strings for syntax errors and schema compliance, and works with any JavaScript GraphQL client including Apollo, Relay, Lokka, and more.
-
+- [eslint-plugin-graphql](https://github.com/apollostack/eslint-plugin-graphql)，一个 ESLint 插件，它将检查你的 GraphQL 查询字符串的语法错误和 schema 符合性，并能够与任何 JavaScript GraphQL 客户端（包括 Apollo、Relay、Lokka 等）一起使用。
