@@ -11,7 +11,7 @@ order: 0
 
 这里是一些设计用于使构建 JavaScript GraphQL 服务器变得更加简单的库，基于 [GraphQL.js](https://github.com/graphql/graphql-js) 和 Facebook 的 GraphQL 类型系统和执行引擎的参考实现。
 
-- [graphql-tools](/tools/graphql-tools)，使你能够使用 GraphQL schema language 构建生产可用的 GraphQL.js schema，而不是直接使用 GraphQL.js 类型构造函数。使用这个包构建的 schema 可以与任何 GraphQL 服务器兼容，包括我们自己的 `apollo-server` 和 Facebook 的 `express-graphql`。这允许你基于 [GraphQL.js 入门指南](http://graphql.cn/graphql-js/) 进行构建，并为解析器、联合、接口、自定义标量、schema 模块化等提供额外的支持。
+- [graphql-tools](/tools/graphql-tools)，使你能够使用 GraphQL schema language 构建生产级别的 GraphQL.js schema，而不是直接使用 GraphQL.js 类型构造函数。使用这个包构建的 schema 可以与任何 GraphQL 服务器兼容，包括我们自己的 `apollo-server` 和 Facebook 的 `express-graphql`。这允许你基于 [GraphQL.js 入门指南](http://graphql.cn/graphql-js/) 进行构建，并为解析器、联合、接口、自定义标量、schema 模块化等提供额外的支持。
 - [apollo-server](/tools/apollo-server)，一个生产可用的 Node.js GraphQL 服务端库，支持 **Express**、**Connect**、**Hapi**、**Koa** 以及其它流行的 Node HTTP 服务器，包含持久化查询、批处理等内置功能。Apollo Server 可以与任何 GraphQL 客户端（如 Apollo、Relay、Lokka 等）协同工作。
 
 [Launchpad](https://launchpad.graphql.com/new) 是一款能够在浏览器中使用的 GraphQL 服务端演示环境。它使用了上面提到的库，你可以把它当成一个服务端的 JSFiddle。想获取更多信息，请参阅 [公告](https://dev-blog.apollodata.com/introducing-launchpad-the-graphql-server-demo-platform-cc4e7481fcba) 和 [文档](https://github.com/apollographql/launchpad/blob/master/docs.md)。
