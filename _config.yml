@@ -27,8 +27,6 @@ sidebar_categories:
     - apollo-server/setup
     - apollo-server/requests
     - apollo-server/graphiql
-    - apollo-server/migration-hapi
-    - apollo-server/migration
   Subscriptions:
     - graphql-subscriptions/index
     - graphql-subscriptions/subscriptions-to-schema
