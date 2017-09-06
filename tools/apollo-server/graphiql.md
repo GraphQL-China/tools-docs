@@ -1,33 +1,31 @@
 ---
 title: GraphiQL
 order: 205
-description: How to set up GraphiQL with Apollo Server
+description: 如何在 Apollo Server 上设置GraphiQL
 ---
 
-Apollo Server allows you to easily use [GraphiQL](https://github.com/graphql/graphiql). Here's how:
+Apollo Server 能够让你轻松的使用 [GraphiQL](https://github.com/graphql/graphiql)，就像这样：
 
-<h2 id="graphiqlOptions">Configuring GraphiQL</h2>
+<h2 id="graphiqlOptions">配置 GraphiQL</h2>
 
-`graphiql<Express/Connect/Hapi/Koa>` accepts the following options object:
+`graphiql<Express/Connect/Hapi/Koa>` 接受以下选项对象：
 
 ```js
 const options = {
-  endpointURL: String, // URL for the GraphQL POST endpoint this instance of GraphiQL serves
-  query?: String, // optional query to pre-populate the GraphiQL UI with
-  operationName?: String, // optional operationName to pre-populate the GraphiQL UI with
-  variables?: Object, // optional variables to pre-populate the GraphiQL UI with
-  result?: Object, // optional result to pre-populate the GraphiQL UI with
-  passHeader?: String, // a string that will be added to the outgoing request header object (e.g "'Authorization': 'Bearer lorem ipsum'")
+  endpointURL: String, // 接收 GraphiQL 当前实例发送请求的 GraphQL POST 入口端点的 URL
+  query?: String, // 可选项，预先填入 GraphiQL UI 的 query 区域的内容
+  operationName?: String, // 可选项，预先填入 GraphiQL UI 的 operationName 区域的内容
+  variables?: Object, // 可选项，预先填入 GraphiQL UI 的 variables 区域的内容
+  result?: Object, // 可选项，预先填入 GraphiQL UI 的 result 区域的内容
+  passHeader?: String, // 将被添加到输出请求头对象的字符串（如 "'Authorization': 'Bearer lorem ipsum'"）
 }
 ```
 
-Apollo Server's `graphiql` middleware does not run any query passed to it, it simply renders it in the UI.
-To actually execute the query, the user must submit it via the GraphiQL UI, which will
-send the request to the GraphQL endpoint specified with `endpointURL`.
+Apollo Server 的 `graphiql` 中间件不会运行传递给它的任何查询，而是直接渲染到 UI。要实际执行查询，用户必须通过 GraphiQL UI 提交它，这将会把请求发送到 `endpointURL` 指定的 GraphQL 入口端点。
 
-<h2 id="graphiqlExpress">Using with Express</h2>
+<h2 id="graphiqlExpress">配合 Express 使用</h2>
 
-If you are using Express, GraphiQL can be configured as follows:
+如果您正在使用 Express，GraphiQL 可以配置如下：
 
 ```js
 import { graphiqlExpress } from 'apollo-server-express';
@@ -38,9 +36,9 @@ app.use('/graphiql', graphiqlExpress({
 ```
 
 
-<h2 id="graphiqlConnect">Using with Connect</h2>
+<h2 id="graphiqlConnect">配合 Connect 使用</h2>
 
-If you are using Connect, GraphiQL can be configured as follows:
+如果您正在使用 Connect，GraphiQL 可以配置如下：
 
 ```js
 import { graphiqlConnect } from 'apollo-server-express';
@@ -51,9 +49,9 @@ app.use('/graphiql', graphiqlConnect({
 ```
 
 
-<h2 id="graphiqlHapi">Using with Hapi</h2>
+<h2 id="graphiqlHapi">配合 Hapi 使用</h2>
 
-If you are using Hapi, GraphiQL can be configured as follows:
+如果您正在使用 Hapi，GraphiQL 可以配置如下：
 
 ```js
 import { graphiqlHapi } from 'apollo-server-hapi';
@@ -70,9 +68,9 @@ server.register({
 ```
 
 
-<h2 id="graphiqlKoa">Using with Koa 2</h2>
+<h2 id="graphiqlKoa">配合 Koa 2 使用</h2>
 
-If you are using Koa 2, GraphiQL can be configured as follows:
+如果您正在使用 Koa 2，GraphiQL 可以配置如下：
 
 ```js
 import { graphiqlKoa } from 'apollo-server-koa';
