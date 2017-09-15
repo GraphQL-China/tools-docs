@@ -26,5 +26,5 @@ npm install graphql apollo-server-micro
 
 - Apollo Server 具有更简单的接口，并允许更少的发送查询的方式，这使得它更容易被理解发生了什么。
 - Apollo Server 将 GraphiQL 提供在单独的路径上，可以使你更灵活地决定何时以及如何开启这一服务。
-- Apollo Server 支持 [查询批处理](https://medium.com/apollo-stack/query-batching-in-apollo-63acfd859862)，可以有助于减少服务器的负载。
+- Apollo Server 支持 [查询合并](https://medium.com/apollo-stack/query-batching-in-apollo-63acfd859862)，可以有助于减少服务器的负载。
 - Apollo Server 内置了对持久化查询的支持，可以使您的应用更快，并使服务器更安全。
